@@ -1,4 +1,7 @@
-*{
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -6,14 +9,14 @@
 body{
     background-color: rgb(240, 238, 241);
 }
-nav{
+header{
     background-color: rgb(255,251,251);
     display: flex;
     justify-content: space-between;
     height: 12vh;
     
 }
-.navBar{
+.container{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -33,8 +36,7 @@ border: none;
     /* DASHBOARD SECTION */
 
 .dashboard{
-    height: 80vh;
-    display: flex;
+    height: 82vh;
 }
 .addButton{
    display: flex;
@@ -49,6 +51,35 @@ border-radius: 12px;
 border: 3px solid black;
 background-color: rgb(255,251,251);
 cursor: pointer;
+}
+
+#bookInfo{
+    width: 300px;
+    border: 1px solid black;
+    position: fixed;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: grey;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    border-radius: 11px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin: 17px 0;
+}
+#bookInfo div{
+    width: 100%;
+    padding: 0 10px;
+}
+input[type='text'],
+input[type='number'] {
+  cursor: text;
 }
 
 #addBook:hover{

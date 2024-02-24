@@ -8,25 +8,32 @@
     <link defer src="/script.js">
 </head>
 <body>
-    <nav>
-        <div class="navBar">
+    <header>
+        <div class="container">
         <div class="title">
             <h1>Library</h1>
         </div>
-        <div class="logIn">
-            <button><a>Log In</a></button>
+        <div class="addButton">
+            <button id="addBook" onclick="addBook()" type="submit">+ Add Book</button>
         </div>
     </div>
-    </nav>
-    <div class="addButton">
-        <button id="addBook" onclick="addBook()" type="submit">+ Add Book</button>
-    </div>
+</header>
     <section class="dashboard">
-        
+        <form>
         <div id="bookInfo">
             <h3>Enter book info</h3>
-            <div class="">
+
+            <div class="bookTitle">
+                <input id="bookTitle" class="input" type="text" placeholder="Title"/>
+            </div>
+            <div class="bookAuthor">
+                <input id="bookAuthor" class="input" type="text" placeholder="Author"/>
+            </div>
+            <div class="bookPages">
+                <input id="bookPages"  class="input" placeholder="Pages" type="number"/>
+            </div>
         </div>
+        </form>
         <div id="bookSection">
             <article></article>
         </div>
