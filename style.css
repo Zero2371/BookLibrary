@@ -37,7 +37,10 @@ border: none;
     display: flex;
 }
 .addButton{
-   margin: 25px auto 0;
+   display: flex;
+   justify-content: center;
+   margin: 25px 0;
+
 }
 #addBook {
     font-size: 2rem;
