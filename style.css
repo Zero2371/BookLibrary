@@ -53,13 +53,20 @@ background-color: rgb(255,251,251);
 cursor: pointer;
 }
 
+#addBook:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
 #bookInfo{
     width: 300px;
+    margin: 50px 0 0;
     border: 1px solid black;
     position: fixed;
     padding: 25px;
     border-radius: 15px;
     background-color: grey;
+    text-align: center;
+    font-size: 1.5rem;
 }
 form{
     display: flex;
@@ -80,6 +87,9 @@ form{
 input[type='text'],
 input[type='number'] {
   cursor: text;
+}
+.bookRead, .submit{
+    margin: 11px 0;
 }
 
 #addBook:hover{
