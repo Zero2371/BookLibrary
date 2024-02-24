@@ -88,15 +88,23 @@ input[type='text'],
 input[type='number'] {
   cursor: text;
 }
-.bookRead, .submit{
-    margin: 11px 0;
+.bookRead{
+    margin: 25px 0;
 }
 
-#addBook:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+.checkbox{
+    transform: scale(1.5); 
 }
 
-
+.submit button{
+    padding: 7px 20px;
+    border-radius: 7px;
+    border: none;
+    font-size: 1.4rem;
+}
+.submit button:hover{
+box-shadow: 0 0 10px rgba(0, 200, 255, 0.9);
+}
         /* FOOTER */
 
 footer{
