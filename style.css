@@ -58,7 +58,7 @@ cursor: pointer;
     /* DASHBOARD SECTION */
 
 .dashboard{
-    height: 82vh;
+    min-height: calc(100vh - 150px);
 }
 #addBook {
     font-size: 2rem;
@@ -129,27 +129,37 @@ box-shadow: 0 0 10px rgba(0, 200, 255, 0.9);
     column-gap: 3rem;
     padding: 3rem;
     justify-content: center;
-    height: 86vh;
-    border: 1px solid black;
 }
 
-.gridCell{
+.bookCell{
     width: 300px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 5px;
+    gap: 15px;
     padding: 30px;
     border: none;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     border-radius: 10px;
 }
+
+.bookCellBtn {
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(240, 238, 241);
+}
+.bookCellBtn:hover{
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.7);
+    padding: 13px 23px;
+}
         /* FOOTER */
 
 footer{
     text-align: center;
     font-size: 1.5rem;
+    margin-top: auto;
 }
 
 footer a {
