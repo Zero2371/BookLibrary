@@ -32,18 +32,6 @@ border-radius: 12px;
 border: none;
 }
 
-
-    /* DASHBOARD SECTION */
-
-.dashboard{
-    height: 82vh;
-}
-.addButton{
-   display: flex;
-   justify-content: center;
-   margin: 25px 0;
-
-}
 #addBook {
     font-size: 2rem;
     padding: 13px;
@@ -56,6 +44,32 @@ cursor: pointer;
 #addBook:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
+
+.addButton{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+ 
+ }
+
+ #addBook:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+    /* DASHBOARD SECTION */
+
+.dashboard{
+    height: 82vh;
+}
+#addBook {
+    font-size: 2rem;
+    padding: 13px;
+border-radius: 12px;
+border: 3px solid black;
+background-color: rgb(255,251,251);
+cursor: pointer;
+}
+
+
 
 #bookInfo{
     display: none;
