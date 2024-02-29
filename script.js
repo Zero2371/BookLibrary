@@ -15,16 +15,3 @@ class Book {
 
 
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    const addBookButton = document.getElementById("addBook");
-    const bookForm = document.getElementById("bookForm");
-
-    addBookButton.addEventListener("click", function() {
-        if (bookForm.style.display === "none" || bookForm.style.display === "") {
-            bookForm.style.display = "block";
-        } else {
-            bookForm.style.display = "none";
-        }
-    });
-});
