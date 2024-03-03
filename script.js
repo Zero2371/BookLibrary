@@ -258,3 +258,46 @@ const toggelRead = (e) => {
   logOutBtn.onclick = signOut
 
   // FIRESTONE
+
+  const dB = firebase.firestore()
+  let unsubscribe
+
+  const setupRealTimeListener = () => {
+    unsubscribe = dB
+    .collection('books')
+    .where('ownerId', '==', auth.currentUser.uid)
+    .orderBy('createdAt')
+    .ohSnapshot((snapshot) => {
+      library.books = docsToBooks(snapshot.docs)
+      updateBooksGrid()
+    })
+  }
+
+  const addBookDB = (newBook) =>{
+    dB.collection('books').add(bookToDoc(newBook))
+  }
+
+  const removeBookDB = async (title) => {
+    dB.collection('books')
+    .doc(await getBookIdDB(book.title))
+    .delete()
+  }
+
+  const toggleBookIsReadDB = async (book) => {
+    dB.collection('books')
+    .doc(await getBookIdDB(book.title))
+    .update({isRead:  !book.isRead})
+  }
+
+  const getBookIdDB = async(title) => {
+    const snapshot = await db
+    .collection('books')
+    .where('ownerId', '==', auth.currentUser.uid)
+    .where('title', '==', title)
+    .get()
+    const bookId = snapshot.docs.map((docs) => doc.id).join('')
+    return bookId
+  }
+
+  //UTILITIES
+
