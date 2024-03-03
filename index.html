@@ -14,12 +14,12 @@
             <h1>Library</h1>
         </div>
         <div class="addButton">
-            <button id="addBook" onclick="addBook()" type="submit">+ Add Book</button>
+            <button id="addBook" >+ Add Book</button>
         </div>
     </div>
 </header>
     <section class="dashboard">
-        <form>
+        <form id="addBookForm">
         <div id="bookInfo">
             <h3>Enter book info</h3>
 
@@ -34,7 +34,7 @@
             </div>
             <div class="bookRead">
                 <label>Have you read it?
-                    <input type="checkbox" name="read" class="checkbox" value="yes">
+                    <input id="isRead" type="checkbox" name="read" class="checkbox" value="yes">
                   </label>
             </div>
             <div class="submit">
@@ -42,56 +42,17 @@
             </div>
         </div>
         </form>
-        <div id="bookSection">
+
+        <!-- commented out incase -->
+        <div class="bookSection" id="booksGrid"></div>
+        <!-- <div id="bookSection">
             <div class="bookCell">
             <p>title</p>
                 <p>author</p>
                 <p>56</p>
                 <button class="bookCellBtn readBtn">Read</button>
                 <button class="bookCellBtn removeBtn">Remove</button>
-            </div>
-            <div class="bookCell">
-                <p>title</p>
-                <p>author</p>
-                <p>56</p>
-                <button class="bookCellBtn readBtn">Read</button>
-                <button class="bookCellBtn removeBtn">Remove</button>
-            </div>
-            <div class="bookCell">
-                <p>title</p>
-                <p>author</p>
-                <p>56</p>
-                <button class="bookCellBtn readBtn">Read</button>
-                <button class="bookCellBtn removeBtn">Remove</button>
-            </div>
-            <div class="bookCell">
-                <p>title</p>
-                <p>author</p>
-                <p>56</p>
-                <button class="bookCellBtn readBtn">Read</button>
-                <button class="bookCellBtn removeBtn">Remove</button>
-            </div>
-            <div class="bookCell">
-                <p>title</p>
-                <p>author</p>
-                <p>56</p>
-                <button class="bookCellBtn readBtn">Read</button>
-                <button class="bookCellBtn removeBtn">Remove</button>
-            </div>
-            <div class="bookCell">
-                <p>title</p>
-                <p>author</p>
-                <p>56</p>
-                <button class="bookCellBtn readBtn">Read</button>
-                <button class="bookCellBtn removeBtn">Remove</button>
-            </div>
-            <div class="bookCell">
-                <p>title</p>
-                <p>author</p>
-                <p>56</p>
-                <button class="bookCellBtn readBtn">Read</button>
-                <button class="bookCellBtn removeBtn">Remove</button>
-            </div>
+            </div> -->
         </div>
     </section>
     <footer>

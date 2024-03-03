@@ -44,7 +44,7 @@ isInLibrary(newBook){
 
 const accountBtn = document.getElementById("accountBtn");
 const accountModal = document.getElementById("accountModal");
-const addBookBtn = document.getElementById("addBookBtn");
+const addBookBtn = document.getElementById("addBook");
 const addBookModal = document.getElementById("addBookModal");
 const errorMsg = document.getElementById("errorMsg");
 const overlay = document.getElementById("overlay");
@@ -148,10 +148,10 @@ const createBookCard = (book) => {
 
 const getBookFromInput = () => {
 
-const title = document.getElementById('title').value
-const author = document.getElementById('author').value
-const pages = document.getElementById('pages').value
-const isRead = document.getElementById('isRead').value
+const title = document.getElementById('bookTitle').value
+const author = document.getElementById('bookAuthor').value
+const pages = document.getElementById('bookPages').value
+const isRead = document.getElementById('bookIsRead').value
 return new Book(title, author, pages, isRead)
 }
 

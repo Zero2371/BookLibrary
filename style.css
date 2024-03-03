@@ -121,7 +121,7 @@ input[type='number'] {
 box-shadow: 0 0 10px rgba(0, 200, 255, 0.9);
 }
 
-#bookSection{
+.bookSection{
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 1fr 1fr;
