@@ -60,7 +60,7 @@ cursor: pointer;
 .dashboard{
     min-height: calc(100vh - 150px);
 }
-#addBook {
+#addBookBtn {
     font-size: 2rem;
     padding: 13px;
 border-radius: 12px;

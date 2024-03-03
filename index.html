@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=~~, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Library</title>
     <link rel="stylesheet" href="/style.css">
-    <link defer src="/script.js">
+    <link defer src="/script.js"/>
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
             <h1>Library</h1>
         </div>
         <div class="addButton">
-            <button id="addBook" >+ Add Book</button>
+            <button id="addBookBtn" >+ Add Book</button>
         </div>
     </div>
 </header>
@@ -22,27 +22,22 @@
         <form id="addBookForm">
         <div id="bookInfo">
             <h3>Enter book info</h3>
-
-            <div class="bookTitle">
                 <input id="bookTitle" class="input" type="text" placeholder="Title"/>
-            </div>
-            <div class="bookAuthor">
+            
                 <input id="bookAuthor" class="input" type="text" placeholder="Author"/>
-            </div>
-            <div class="bookPages">
-                <input id="bookPages"  class="input" placeholder="Pages" type="number"/>
-            </div>
+            
+                <input id="bookPages"  class="input" placeholder="Pages" type="number"/>  
+
             <div class="bookRead">
                 <label>Have you read it?
                     <input id="isRead" type="checkbox" name="read" class="checkbox" value="yes">
-                  </label>
+                </label>
             </div>
-            <div class="submit">
-                <button type="submit">Submit</button>
-            </div>
+                <button class=submitBtn type="submit">Submit</button>
         </div>
         </form>
-
+        <div class="modal" id="accountModal"></div>
+    <div class="overlay" id="overlay"></div>
         <!-- commented out incase -->
         <div class="bookSection" id="booksGrid"></div>
         <!-- <div id="bookSection">

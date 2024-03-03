@@ -44,7 +44,7 @@ isInLibrary(newBook){
 
 const accountBtn = document.getElementById("accountBtn");
 const accountModal = document.getElementById("accountModal");
-const addBookBtn = document.getElementById("addBook");
+const addBookBtn = document.getElementById("addBookBtn");
 const addBookModal = document.getElementById("addBookModal");
 const errorMsg = document.getElementById("errorMsg");
 const overlay = document.getElementById("overlay");
@@ -54,16 +54,17 @@ const loggedIn = document.getElementById("loggedIn");
 const loggedOut = document.getElementById("loggedOut");
 const loadingRing = document.getElementById("loadingRing");
 
-const setUpNavbar = (user) => {
-  if (user){
-    loggedIn.classList.add('active')
-    loggedOut.classList.add('active')
-  } else {
-    loggedIn.classList.remove('active')
-    loggedOut.classList.add('active')
-  }
-  loadingRing.classList.remove('active');
-}
+//Dont Need
+// const setUpNavbar = (user) => {
+//   if (user){
+//     loggedIn.classList.add('active')
+//     loggedOut.classList.add('active')
+//   } else {
+//     loggedIn.classList.remove('active')
+//     loggedOut.classList.add('active')
+//   }
+//   loadingRing.classList.remove('active');
+// }
 
 const setupAccountModal = (user) => {
   if (user) {
