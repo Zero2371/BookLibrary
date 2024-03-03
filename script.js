@@ -229,4 +229,32 @@ const toggelRead = (e) => {
 
   //AUTHENTICATION
 
-  
+  const auth = firebase.auth()
+  const logInBtn = document.getElementById('logInBtn')
+  const logOutBtn = document.getElementById('logOutBtn')
+
+  auth.onauthStateChanged(async (user) => {
+    if (user) {
+      setupRealTimeListener()
+    } else {
+      if (unsubscribe) unsubscribed()
+      restoreLocal()
+    updateBooksGrid()
+    }
+    setupAccountModal(user)
+    setUpNavbar(user)
+  })
+
+  const signIn = () => {
+    const provider = new firebase.auth.GoogleAuthProvider()
+    auth.signInWithPopup(provider)
+  }
+
+  const signOut = () => {
+    auth.signOut()
+  }
+
+  logInBtn.onclick = signIn
+  logOutBtn.onclick = signOut
+
+  // FIRESTONE
