@@ -9,7 +9,59 @@
 body{
     background-color: rgb(240, 238, 241);
 }
-header{
+
+#new-book-btn{
+display: block;
+margin: 0 auto;
+padding: 20px;
+font-size: 20px;
+background-color: grey;
+color: white;
+border: 1px black solid;
+cursor: pointer;
+}
+
+form{
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
+
+
+        /* FOOTER */
+
+footer{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: auto;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.3rem;
+}
+
+footer a:hover{
+    color: rgb(0, 200, 255);
+}
+
+
+
+
+/* OLD CODE */
+
+/* header{
     background-color: rgb(255,251,251);
     display: flex;
     justify-content: space-between;
@@ -56,7 +108,7 @@ cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
     /* DASHBOARD SECTION */
-
+/*
 .dashboard{
     min-height: calc(100vh - 150px);
 }
@@ -155,22 +207,4 @@ box-shadow: 0 0 10px rgba(0, 200, 255, 0.9);
 .bookCellBtn:hover{
     box-shadow:  0 0 10px rgba(0, 0, 0, 0.7);
     padding: 13px 23px;
-}
-        /* FOOTER */
-
-footer{
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: auto;
-}
-
-footer a {
-    color: black;
-    text-decoration: none;
-    font-size: 2.3rem;
-}
-
-footer a:hover{
-    color: rgb(0, 200, 255);
-}
-
+} */
