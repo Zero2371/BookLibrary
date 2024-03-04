@@ -1,4 +1,22 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//OLD CODE, 
+/* 
 class Book {
     constructor(
       title = 'Unknown',
@@ -327,3 +345,5 @@ const toggelRead = (e) => {
       createdAt: firebase.firestone.FieldValue.serverTimestamp(),
     }
   } 
+
+  */
