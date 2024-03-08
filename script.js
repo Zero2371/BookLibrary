@@ -19,9 +19,7 @@ function toggleRead(index) {
   myLibrary[index].toggleRead;
   render();
 }
-function space() {
-  
-}
+
 
  function render(){
   let libraryEl= document.querySelector('#library');
@@ -35,11 +33,11 @@ function space() {
     <h3 class='title'>${book.title}</h3>
     <h4 class='author'>by ${book.author}</h4>
     </div>
-    <div class='book-body'>
+    <div class='card-body'>
     <p>${book.pages} pages</p>
-    <p class="read-status>${book.read ? "Read" : "Not read yet"}</p> 
-    <button class='remove-btn' onclick='removeBook(${i}'>Remove</button>
-    </div>`;
+    <p class="read-status">${book.read ? "Read" : "Not read yet"}</p> 
+    </div>
+    `;
     libraryEl.appendChild(bookEl); 
   }
 }

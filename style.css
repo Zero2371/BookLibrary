@@ -86,9 +86,7 @@ input[type="submit"]:hover{
 
 }
 
-.book-header{
-    background-color: #333;
-    color: white;
+.card-header{
     padding: 20px;
     text-align: center;
 }
@@ -102,7 +100,7 @@ input[type="submit"]:hover{
     font-size: 18px;
 }
 
-.book-body{
+.card-body{
     padding: 20px;
     text-align: center;
 }
@@ -112,19 +110,24 @@ input[type="submit"]:hover{
     font-size: 18px
 }
 
-.book-status{
+.read-status{
     margin: 10px 0 0 0;
     font-size: 16px;
-    color: #333;
+    color: white;
+    border: 2px solid black;
+    background-color: rgb(0, 0, 0, 0.5);
 }
-
-button{
+.read-status:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+    color: black;
+}
+.remove-btn{
     padding: 10px 20px;
     border: 2px solid #333;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
-    background-color: #fff;
+    background-color: black;
     cursor: pointer;
 }
 
@@ -133,11 +136,6 @@ button:hover{
     color: #fff;
 }
 
-.read-status{
-    background-color: aqua;
-}
-
-save
 
 
        /* FOOTER */
